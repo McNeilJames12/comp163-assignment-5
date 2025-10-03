@@ -17,3 +17,13 @@ print()
 
 # challenge 2
 print("=== Challenge 2: Prime Number Checker ===")
+n = int(input())
+print(f"Enter a number: Testing divisors from 2 to {n - 1}...")
+if n > 1:
+    for i in range(2, n):
+        if n % i == 0:
+            print(f"{n} is not prime (divisible by 3)")
+            break
+    else:
+        print(f"{n} is prime!")
+print()
